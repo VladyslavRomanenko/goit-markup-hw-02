@@ -2,6 +2,7 @@
     list-style: none;
 
 }
+
 .link{
     text-decoration: none;
 }
@@ -20,6 +21,7 @@
 .logo-studio-dark {
     color: #2E2F42;
 }
+
 .logo-studio-light {
     color: #F4F4FD;
 }
@@ -54,6 +56,7 @@
         letter-spacing: 0.02em;    
         color: #434455;
 }
+
 .title-description-light{
     color: #E7E9FC;
 }
@@ -104,6 +107,7 @@
         text-align: center;
         /* color: #FFFFFF; */
 }
+
 .hero-button{
     font-family: 'Roboto', sans-serif;
         font-style: normal;
@@ -119,10 +123,12 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
 }
+
 .hero-button:hover,
 .hero-button:focus{
     background: #404BBF;
 }
+
 /* ===================== /HERO ==================== */
 
 
