@@ -1,135 +1,176 @@
+:root{
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --primary-font-size: 16px;
+    --primary-brand-color: #4D5AE5;
+    --pressed-state-color: #404BBF;
+    --dark-color: #2E2F42;
+    --success-color: #31D0AA;
+    --text-color: #434455;
+    --subtle-text-color: #8E8F99;
+    --accent-color: #E7E9FC;
+    --light-color: #F4F4FD;
+    --modal-overlay-color: #2E2F42;
+    --hero-background-color: #2E2F42;
+    --hero-title-color: #FFFFFF;
+}
+
 .list{
     list-style: none;
-
 }
 
 .link{
     text-decoration: none;
 }
 
+body{
+    font-family: var(--primary-font) ;
+    color: var(--dark-color);
+}
+
 /* ================= COMPONENTS ================= */
 .logo {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
+    font-family: var(--secondary-font) ;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.16;
     text-transform: uppercase;
-    color: #4D5AE5;
+    color: var(--primary-brand-color);
 }
 
 .logo-studio-dark {
-    color: #2E2F42;
+    color: var(--modal-overlay-color);
 }
 
 .logo-studio-light {
-    color: #F4F4FD;
+    color: var(--light-color); 
 }
 
 .section-title {
-    font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;    
-        text-align: center;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;    
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--dark-color);
 }
 
 .title-text{
-    font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;   
-        color: #2E2F42;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;   
+    color: var(--dark-color);
 }
 
 .title-description{
-    font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;    
-        color: #434455;
+    font-size: var(--primary-font-size);
+    line-height: 1.5;
+    letter-spacing: 0.02em;    
+    color: var(--text-color);
 }
 
 .title-description-light{
-    color: #E7E9FC;
+    color: var(--accent-color);
 }
 
 /* ================= /COMPONENTS ================= */
 
 /* =================== HEADER =================== */
 .menu-link{
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #2E2F42;
+    font-weight: 500;
+    font-size: var(--primary-font-size);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
 }
 
 .menu-link:hover,
 .menu-link:focus{
-    color: #404BBF;
+    color: var(--pressed-state-color);
 }
 
 .contact-link{
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
+    font-style: normal;
+    font-size: var(--primary-font-size);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
 }
 
 .contact-link:hover,
 .contact-link:focus{
-    color: #404BBF;
+    color: var(--pressed-state-color);
 }
 
 /* =================== /HEADER =================== */
 
 /* ===================== HERO ==================== */
 .hero-title{
-    font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 1.07;
-        letter-spacing: 0.02em;
-        text-align: center;
-        /* color: #FFFFFF; */
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    /* color: var(--hero-title-color); */
 }
 
 .hero-button{
-    font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        align-items: center;
-        letter-spacing: 0.04em;
-        color: #FFFFFF;
-        background: #4D5AE5;
-        cursor: pointer;
-        border: none;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
+    font-weight: 500;
+    font-size: var(--primary-font-size);
+    line-height: 1.5;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: var(--hero-title-color);
+    background: var(--primary-brand-color);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .hero-button:hover,
 .hero-button:focus{
-    background: #404BBF;
+    background: var(--pressed-state-color);
 }
 
 /* ===================== /HERO ==================== */
 
+
+/* =================== ADVANTAGES =================== */
+/* =================== /ADVANTAGES =================== */
+
+/* =================== ACTIVITY =================== */
+/* =================== /ACTIVITY =================== */
+
+/* =================== TEAM =================== */
+/* =================== /TEAM =================== */
+
+/* =================== FOOTER =================== */
+/* =================== /FOOTER =================== */
+
+
+/* ----------------PORTFOLIO.HTML --------------*/
+.selection-button{
+    font-family: inherit;
+    font-weight: 500;
+    font-size: var(--primary-font-size);
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--primary-brand-color);
+    background: var(--light-color);
+    cursor: pointer;
+    border: 1px solid var(--accent-color); 
+    border-radius: 4px;
+}
+.selection-button:hover,
+.selection-button:focus{
+    background: var(--pressed-state-color);
+    color: var(--hero-title-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
 
 
